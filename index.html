@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            Objects
+        */
+
+        let country = {
+            name: "Poland",
+            population: 30_000_000, // 38000000
+            continent: "Europe",
+            cities: ["Warsaw", "Kraków", "Gdańsk"],
+            capital: {
+                name: "Warsaw",
+                population: 2_000_000
+            }
+        }
+
+        console.log(country);
+        console.log(country.name); // Poland
+        console.log(country.population); // 30000000
+        console.log(country.continent); // Europe
+        console.log(country.cities); // ['Warsaw', 'Kraków', 'Gdańsk']
+
+        let obj = {};
+        console.log(obj);
+
+        obj.arr = [1,2,3]; // {}
+        console.log(obj); // {data: [1,2,3]}
+
+        obj.data = {
+            a: 12,
+            b: 20
+        }
+        console.log(obj); // {arr: Array(3), data: {...}}
+
+    </script>
+</body>
+</html>
